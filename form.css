@@ -1,0 +1,14 @@
+@import "reset.css"
+
+body{
+	font-size:20px;
+	font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+
+div {
+	display: inline-block;
+	
+}
+#sisu{
+	padding-left:400px;
+}

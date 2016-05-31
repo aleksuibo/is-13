@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <title>Lisamine</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+<div id="sisu">
+	<h3>Kuulutuse lisamine</h3>
+	<a href="/~aleks.uibo/kood/allitems.php">Turg</a> <br>
+    <form action="form.php" method="post" enctype="multipart/form-data">
+        
+		<div><br>
+        <input type="text" placeholder="Kasutajanimi" name="username" autocomplete="off" required><br>
+		</div>
+		
+        <div><br>
+        <input type="password" placeholder="Parool" name="password" autocomplete="off" required><br>
+		</div>
+		
+		<br>
+		<br>
+		      		
+		<input value="Ost" type="radio" name="action" autocomplete="off" required>Ost
+		<input value="Müük" type="radio" name="action" autocomplete="off" required>Müük <br>
+		
+        <div><br>
+        <input type="text" placeholder="Tootenimetus" name="product" autocomplete="off" required><br>
+		</div>
+		
+        <div><br>
+        <input type="number" placeholder="Toote hind(€)" name="price" autocomplete="off" required><br>
+		</div>
+		
+		<br>
+        <br>	  
+        
+		<textarea rows="5" cols="50" placeholder="Kirjelda toodet" name="description" placeholder="Kirjeldus" autocomplete="off" required></textarea><br>
+		<br>
+		
+		Kontakt:<br>
+		
+		<div><br>
+		<input type="number" placeholder="Telefoninumber" name="phonenumber" autocomplete="off" required><br>
+		</div>
+	
+		<div><br>
+		<input type="email" placeholder="E-mail" name="email" autocomplete="off" required><br>
+		</div>
+		
+		<br>
+		<br>
+
+        Lisa pilt:<br>
+        <input type="file" name="img" accept="image/*" autocomplete="off" required><br>
+        <br>
+		
+        <input type="submit" value="Valmis">
+		<INPUT TYPE="button" onClick="history.go(0)" VALUE="Puhasta">
+    </form>
+</div>	
+</body>
+</html>
