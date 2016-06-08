@@ -24,7 +24,7 @@
               <td>' . $i++ . '</td>			  
               <td><img src="db/' . $user["id"] . '/pilt.jpg" height="40" width="40"></td>           
               <td>' . "&nbsp;-&nbsp;" . $user["product"]."&nbsp;". '</td>                         
-			  <td>' . $user["action"] . "&nbsp;|&nbsp;&nbsp;&nbsp;". '</td>
+			  <td>' ."| ". $user["action"] . "&nbsp;|&nbsp;&nbsp;&nbsp;". '</td>
               
 			  <td>
                     <a href="singleitem.php?id=' .
