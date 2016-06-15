@@ -38,7 +38,7 @@
         </div>
 		
 		<div>
-		Toote hind: <input type="number" name="price" value="<?php print $userdata["price"]; ?>" required><br>   			
+		Toote hind: <input type="number" step="any"/ name="price" value="<?php print $userdata["price"]; ?>" required><br>   			
 		</div>
 		
 		<br>
