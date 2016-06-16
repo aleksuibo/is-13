@@ -12,11 +12,11 @@
     <form action="form.php" method="post" enctype="multipart/form-data">
         
 		<div><br>
-        <input type="text" placeholder="Kasutajanimi" name="username" autocomplete="off" required><br>
+        <input type="text" placeholder="Kasutajanimi" maxlength="20" name="username" autocomplete="off" required><br>
 		</div>
 		
         <div><br>
-        <input type="password" placeholder="Parool" name="password" autocomplete="off" required><br>
+        <input type="password" placeholder="Parool" maxlength="20" name="password" autocomplete="off" required><br>
 		</div>
 		
 		<br>
@@ -26,27 +26,27 @@
 		<input value="Müük" type="radio" name="action" autocomplete="off" required>Müük <br>
 		
         <div><br>
-        <input type="text" placeholder="Tootenimetus" name="product" autocomplete="off" required><br>
+        <input type="text" placeholder="Tootenimetus" maxlength="20" name="product" autocomplete="off" required><br>
 		</div>
 		
         <div><br>
-        <input type="number" placeholder="Toote hind(€)" step="any"/ name="price" autocomplete="off" required><br>
+        <input type="number" placeholder="Toote hind(€)" maxlength="20" step="any"/ name="price" autocomplete="off" required><br>
 		</div>
 		
 		<br>
         <br>	  
         
-		<textarea rows="5" cols="50" placeholder="Kirjelda toodet" name="description" placeholder="Kirjeldus" autocomplete="off" required></textarea><br>
+		<textarea rows="5" cols="50" placeholder="Kirjelda toodet" maxlength="100" name="description" placeholder="Kirjeldus" autocomplete="off" required></textarea><br>
 		<br>
 		
 		Kontakt:<br>
 		
 		<div><br>
-		<input type="number" placeholder="Telefoninumber" name="phonenumber" autocomplete="off" required><br>
+		<input type="number" placeholder="Telefoninumber" maxlength="20" name="phonenumber" autocomplete="off" required><br>
 		</div>
 	
 		<div><br>
-		<input type="email" placeholder="E-mail" name="email" autocomplete="off" required><br>
+		<input type="email" placeholder="E-mail" name="email" maxlength="20" autocomplete="off" required><br>
 		</div>
 		
 		<br>
