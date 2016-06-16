@@ -19,11 +19,11 @@
     <form action="form.php?id=<?php print $id; ?>" method="post" enctype="multipart/form-data">
 	
         <div>
-		Kasutajanimi: <input type="text" name="username" value="<?php print $userdata["username"]; ?>" required><br>    		
+		Kasutajanimi: <input type="text" maxlength="20" name="username" value="<?php print $userdata["username"]; ?>" required><br>    		
     	</div>
 		
 		<div>
-		Salasõna: <input type="password" name="password" value="<?php print $userdata["password"]; ?>" required><br>    		
+		Salasõna: <input type="password" name="password" maxlength="20" value="<?php print $userdata["password"]; ?>" required><br>    		
         </div>
 		
 		<br>
@@ -34,27 +34,27 @@
 		<br>
 		
 		<div>
-		Toote nimetus: <input type="text" name="product"  value="<?php print $userdata["product"]; ?>" required><br>    		
+		Toote nimetus: <input type="text" name="product"  maxlength="20" value="<?php print $userdata["product"]; ?>" required><br>    		
         </div>
 		
 		<div>
-		Toote hind: <input type="number" step="any"/ name="price" value="<?php print $userdata["price"]; ?>" required><br>   			
+		Toote hind: <input type="number" step="any"/ name="price" maxlength="20" value="<?php print $userdata["price"]; ?>" required><br>   			
 		</div>
 		
 		<br>
 		
-		<textarea rows="5" cols="50" placeholder="Kirjelda toodet "name="description" required><?php print $userdata["description"]; ?></textarea><br>
+		<textarea rows="5" cols="50" placeholder="Kirjelda toodet " maxlength="20" name="description" required><?php print $userdata["description"]; ?></textarea><br>
 		
 		<br>
 		
 		Kontakt:<br>
 		
 		<div>
-		Telefoninumber: <input type="number" name="phonenumber" value="<?php print $userdata["phonenumber"]; ?>" required><br>
+		Telefoninumber: <input type="number" name="phonenumber" maxlength="20" value="<?php print $userdata["phonenumber"]; ?>" required><br>
 		</div>
 		
 		<div>
-		E-mail: <input type="email" name="email" value="<?php print $userdata["email"]; ?>"required><br>   		
+		E-mail: <input type="email" name="email" maxlength="20" value="<?php print $userdata["email"]; ?>"required><br>   		
         </div>
 		
 		<br>
