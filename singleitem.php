@@ -25,7 +25,7 @@
 				print "E-mail : ". $userdata["email"]. "<br>";								           
                 print "Lisatud : ". $userdata["id"];
 				echo "<br>";
-				print '<img src="' . "./db/$id/pilt.jpg" . '" height="100" width="100">'. "<br>";
+				print '<img src="' . "./db/$id/image.jpg" . '" height="100" width="100">'. "<br>";
         ?>
 		
 		<br>	
