@@ -61,7 +61,7 @@
 		<br>
 		
         Lisa pilt:<br>
-        <img src="<?php print "./db/$id/pilt.jpg"; ?>" height="100" width="100"><br>
+        <img src="<?php print "./db/$id/image.jpg"; ?>" height="100" width="100"><br>
         <input type="file" name="img" accept="image/*"><br>
 		
 		Lisatud: <?php print $userdata["id"]; ?><br>
