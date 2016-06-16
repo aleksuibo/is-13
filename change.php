@@ -43,7 +43,7 @@
 		
 		<br>
 		
-		<textarea rows="5" cols="50" placeholder="Kirjelda toodet " maxlength="20" name="description" required><?php print $userdata["description"]; ?></textarea><br>
+		<textarea rows="5" cols="50" placeholder="Kirjelda toodet " maxlength="100" name="description" required><?php print $userdata["description"]; ?></textarea><br>
 		
 		<br>
 		
