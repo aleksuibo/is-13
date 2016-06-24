@@ -6,21 +6,7 @@ ini_set('display_errors',1);
 error_reporting(E_ALL);
 	
 function addadvert($userdata) {
-	$username = $userdata["username"];
-	$password = $userdata["password"];
-	$product = $userdata["product"];
-	$email = $userdata["email"];
-	$phonenumber = $userdata["phonenumber"];
-	$price = $userdata["price"];
-	$action = $userdata["action"];
-	$description = $userdata["description"];
-	$file = $userdata["image"];
-	$enimi = $userdata["enimi"];
-	$pnimi = $userdata["pnimi"];
-	$sugu = $userdata["sugu"];
-	$tel = $userdata["tel"];
-	$epost = $userdata["epost"];
-	$markus = $userdata["markus"];
+	$file = $_FILES['img']['tmp_name'];
 	$time = time();
 	$folder = PATH . '/' . $time;
 	
@@ -33,20 +19,20 @@ function addadvert($userdata) {
 	$userdata = fopen($folder . '/data.json', 'w');
 	$data = array(
 		"id" => $time,
-		"username" => $username,
-		"password" => $password,
-		"product" => $product,
-		"email" => $email,
-		"phonenumber" => $phonenumber,
-		"price" => $price,   
-		"action" => $action,
-		"description" => $description,
-		"enimi" => $enimi,
-		"pnimi" => $pnimi,
-		"sugu" => $sugu,
-		"tel" => $tel,
-		"epost" => $epost,
-		"markus" => $markus,
+		"username" => $_POST['username'],
+		"password" => $_POST['password'],
+		"product" => $_POST['product'],
+		"email" => $_POST['email'],
+		"phonenumber" => $_POST['phonenumber'],
+		"price" => $_POST['price'],  
+		"action" => $_POST['action'],
+		"description" => $_POST['description'],
+		"enimi" => $_POST['enimi'],
+		"pnimi" => $_POST['pnimi'],
+		"sugu" => $_POST['sugu'],
+		"tel" => $_POST['tel'],
+		"epost" => $_POST['epost'],
+		"markus" => $_POST['markus'],
 		"aeg" => $time,
 		"aeg2" => $time);
 
@@ -58,21 +44,6 @@ function addadvert($userdata) {
 		
 function change_singleitem($userdata) {
 	$id = $userdata["id"];
-	$username = $userdata["username"];
-	$password = $userdata["password"];
-	$product = $userdata["product"];
-	$email = $userdata["email"];
-	$phonenumber = $userdata["phonenumber"];
-	$price = $userdata["price"];
-	$action = $userdata["action"];
-	$description = $userdata["description"];
-	$file = $userdata["image"];
-	$enimi = $userdata["enimi"];
-	$pnimi = $userdata["pnimi"];
-	$sugu = $userdata["sugu"];
-	$tel = $userdata["tel"];
-	$epost = $userdata["epost"];
-	$markus = $userdata["markus"];
 	$aeg = time();
             
 	$ajur = './' . PATH . "/$id/data.json";
@@ -85,20 +56,20 @@ function change_singleitem($userdata) {
 	$userdata = fopen($folder . '/data.json', 'w');
 	$data = array(
 		"id" => $id,
-		"username" => $username,
-		"password" => $password,
-		"product" => $product,
-		"email" => $email,
-		"phonenumber" => $phonenumber,
-		"price" => $price,
-		"action" => $action,
-		"description" => $description,
-		"enimi" => $enimi,
-		"pnimi" => $pnimi,
-		"sugu" => $sugu,
-		"tel" => $tel,
-		"epost" => $epost,
-		"markus" => $markus,
+		"username" => $_POST['username'],
+		"password" => $_POST['password'],
+		"product" => $_POST['product'],
+		"email" => $_POST['email'],
+		"phonenumber" => $_POST['phonenumber'],
+		"price" => $_POST['price'],  
+		"action" => $_POST['action'],
+		"description" => $_POST['description'],
+		"enimi" => $_POST['enimi'],
+		"pnimi" => $_POST['pnimi'],
+		"sugu" => $_POST['sugu'],
+		"tel" => $_POST['tel'],
+		"epost" => $_POST['epost'],
+		"markus" => $_POST['markus'],
 		"aeg" => $aeg,
 		"aeg2" => $aeg2);
 
